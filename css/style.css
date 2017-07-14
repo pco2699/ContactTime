@@ -1,0 +1,377 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: "メイリオ", Meiryo, Osaka, sans-serif;
+	line-height: 1.5;
+	font-size: 14px;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+/* 共通部品のデザイン指定
+---------------------*/
+h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+h2.emp {
+    color: #0091CC;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+button.button {
+    height: 60px;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid #0091CC;
+    color: #0091CC;
+    background-color: white;
+    transition: 0.3s;
+    margin: 60px auto;
+}
+
+button.button:hover {
+    background-color: #0091CC;
+    color: white;
+}
+
+.background-grey {
+    background-color: #fafafa;
+}
+
+/* ヘッダー部分のデザイン指定
+---------------------*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #222222;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+header img {
+    width: 400px;
+    height: 87.69px;
+    margin: 10px;
+}
+
+/* ヘッダー部分のリンク部の指定
+---------------------*/
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    font-size: 21px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    padding: 50px 50px 50px 0;
+    transition: transform 0.2s linear;
+}
+
+nav li:hover {
+    transform: scale(1.3);
+}
+
+nav li.on {
+    transform: scale(1.1);
+}
+
+nav a:link, a:visited {
+    color: inherit;
+}
+
+/* 本文全体 設定
+---------------------*/
+#content{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    padding-top: 121px;
+}
+
+/* メインビジュアル部 設定
+---------------------*/
+#mainvisual {
+    padding: 173px;
+    background: url("../img/ContactLens.png") center no-repeat;
+    text-align: center;
+    font-size: 36px;
+}
+
+#mainvisual h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* アバウト記述部 設定
+---------------------*/
+#about {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#about p {
+    margin: 40px;
+}
+
+/* スライドショー部 設定
+---------------------*/
+#about_image {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_image img {
+    max-height: 600px;
+    width: auto;
+    margin: 10px;
+}
+
+/* コース全体 設定
+---------------------*/
+#course {
+    padding-top: 60px;
+}
+
+/* コーストップ部 設定
+---------------------*/
+#course_top {
+    margin-bottom: 60px;
+}
+
+/* コース グリッドレイアウト部 設定
+-------------------------------*/
+.course_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 0;
+    width: 1370px;
+    margin: auto;
+}
+
+.course_grid img {
+    flex-basis: 685px;
+}
+
+.course_grid_item_text, .course_grid_item_text_reverse{
+    flex-basis: 480px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.course_grid_item_text {
+    padding-left: 50px;
+    margin-right: auto;
+}
+
+.course_grid_item_text_reverse {
+    padding-right: 50px;
+    margin-left: auto;
+}
+
+.course_grid_item_text h2.jp {
+    margin-bottom: 40px;
+}
+
+/* ニューストップ部 設定
+-------------------------------*/
+#news_top {
+    margin: 60px auto;
+}
+
+.news_grid {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.news_item {
+    width: 302px;
+    text-align: left;
+    margin: 0 15px;
+    transition: transform 0.2s linear;
+}
+
+.news_item:hover {
+    transform: scale(1.1);
+}
+
+.news_item .img {
+    margin-bottom: 30px;
+}
+
+.news_date {
+    margin-bottom: 24px;
+}
+
+.news_text {
+    font-size: 14px;
+    line-height: 2.0;
+}
+
+/* アクセス部の指定
+---------------------*/
+#access {
+    padding-bottom: 30px;
+}
+
+#access_top {
+    padding: 60px 0;
+}
+
+#access .map {
+    height: 300px;
+    width: 100%;
+}
+
+#access_info_table {
+    margin: 60px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.access_info_row {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.access_info_head {
+    flex-basis: 20%;
+    margin-right: 50px;
+}
+
+.access_info_item {
+    flex-basis: 80%;
+    padding-bottom: 30px;
+}
+
+/* コンタクト部の指定
+---------------------*/
+#contact {
+    padding: 60px 0 140px;
+
+}
+
+#contact_text p {
+    margin-bottom: 30px;
+}
+
+#contact_form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.contact_form_row {
+    display: flex;
+    flex-direction: row;
+    width: 642px;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-color: #bfbfbf;
+    border-style: none none solid none;
+}
+
+.contact_form_row:first-child {
+    border-top-width: 2px;
+    border-style: solid none solid none;
+}
+
+.contact_form_head, .contact_form_item {
+    border-width: 1px;
+    border-color: #bfbfbf;
+}
+
+.contact_form_head {
+    width: 240px;
+    padding: 10px 64px 10px 16px;
+    border-style: none solid none none;
+}
+
+.contact_form_item {
+    width: 400px;
+}
+
+.contact_form_item input[type=text], select {
+    width: 328px;
+    height: 36px;
+    border: solid 1px #bfbfbf;
+    margin: 8px;
+}
+
+.contact_form_item input[type=checkbox]{
+    margin: 8px;
+}
+
+.contact_form_item label {
+    margin: 8px;
+    display: block;
+}
+
+.contact_form_item textarea {
+    width: 328px;
+    height: 150px;
+    margin: 8px;
+}
+
+
+/* フッターの指定
+---------------------*/
+#footer {
+    padding: 30px 30px;
+    background: #000000;
+    text-align: center;
+    color: white;
+}
+
+
+/*
+---------------------*/
